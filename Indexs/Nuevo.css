@@ -1,0 +1,95 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: antiquewhite;
+}
+
+.contenedor {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 20px; 
+    max-width: 1000px; 
+    margin: auto; 
+    padding: 20px;
+}
+
+.texto {
+    flex: 1;
+    text-align: left; 
+}
+h1 {
+    text-align: center;
+    color: chocolate;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 30px;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Degradado azul */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+/* Logo */
+.logo img {
+    height: 80px;
+    border: 8cm solid #7c1414;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(182, 209, 28, 0.685);
+    
+}
+
+img {
+    border: 5px solid rgb(22, 83, 83);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    
+}
+
+/* Menú */
+.menu ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo de los enlaces del menú */
+.menu ul li {
+    margin-left: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px; /* Bordes redondeados */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Efecto Hover */
+.menu ul li a:hover {
+    background: rgba(255, 255, 255, 0.2); /* Fondo transparente */
+    transform: scale(1.1); /* Efecto de crecimiento */
+}
+
+/* Efecto de subrayado animado */
+.menu ul li a::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0;
+    background: white;
+    transition: width 0.3s ease-in-out;
+    margin: auto;
+}
+
+.menu ul li a:hover::after {
+    width: 100%;
+}
